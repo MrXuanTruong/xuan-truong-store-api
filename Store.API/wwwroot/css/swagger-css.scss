@@ -1,0 +1,31 @@
+﻿body {
+    .swagger-ui {
+        .models {
+            display: none;
+        }
+
+        .topbar {
+            .download-url-wrapper {
+                display: none;
+            }
+        }
+
+        .auth-container {
+            input[type=text] {
+                width: 100%;
+            }
+        }
+
+        .info {
+            hgroup.main {
+                a {
+                    display: none;
+                }
+            }
+        }
+
+        .response-controls{
+            display:none;
+        }
+    }
+}

@@ -1,0 +1,38 @@
+2020-09-14 14:13:54,419 [1] INFO Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+2020-09-14 14:13:54,457 [1] INFO Microsoft.Hosting.Lifetime - Hosting environment: Development
+2020-09-14 14:13:54,460 [1] INFO Microsoft.Hosting.Lifetime - Content root path: D:\Projects\Truong\Store\Store.API
+2020-09-14 14:13:54,617 [5] ERROR Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware - An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: Unable to resolve service for type 'Swashbuckle.AspNetCore.Swagger.ISwaggerProvider' while attempting to Invoke middleware 'Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware'.
+   at Microsoft.AspNetCore.Builder.UseMiddlewareExtensions.GetService(IServiceProvider sp, Type type, Type middleware)
+   at lambda_method(Closure , Object , HttpContext , IServiceProvider )
+   at Microsoft.AspNetCore.Builder.UseMiddlewareExtensions.<>c__DisplayClass4_1.<UseMiddleware>b__2(HttpContext context)
+   at Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Cors.Infrastructure.CorsMiddleware.Invoke(HttpContext context, ICorsPolicyProvider corsPolicyProvider)
+   at Microsoft.AspNetCore.Builder.UseMiddlewareExtensions.<>c__DisplayClass4_1.<UseMiddleware>b__2(HttpContext context)
+   at Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2020-09-14 14:13:54,976 [5] ERROR Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware - An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: Unable to resolve service for type 'Swashbuckle.AspNetCore.Swagger.ISwaggerProvider' while attempting to Invoke middleware 'Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware'.
+   at Microsoft.AspNetCore.Builder.UseMiddlewareExtensions.GetService(IServiceProvider sp, Type type, Type middleware)
+   at lambda_method(Closure , Object , HttpContext , IServiceProvider )
+   at Microsoft.AspNetCore.Builder.UseMiddlewareExtensions.<>c__DisplayClass4_1.<UseMiddleware>b__2(HttpContext context)
+   at Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware.TryServeStaticFile(HttpContext context, String contentType, PathString subPath)
+   at Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Cors.Infrastructure.CorsMiddleware.Invoke(HttpContext context, ICorsPolicyProvider corsPolicyProvider)
+   at Microsoft.AspNetCore.Builder.UseMiddlewareExtensions.<>c__DisplayClass4_1.<UseMiddleware>b__2(HttpContext context)
+   at Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2020-09-14 14:15:39,339 [1] INFO Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+2020-09-14 14:15:39,355 [1] INFO Microsoft.Hosting.Lifetime - Hosting environment: Development
+2020-09-14 14:15:39,358 [1] INFO Microsoft.Hosting.Lifetime - Content root path: D:\Projects\Truong\Store\Store.API
+2020-09-14 14:15:40,932 [4] WARN Microsoft.EntityFrameworkCore.Model - Navigations 'Account.CreatedAccount' and 'Account.UpdatedAccount' were separated into two relationships as ForeignKeyAttribute was specified on navigations on both sides.
+2020-09-14 14:16:14,160 [1] INFO Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+2020-09-14 14:16:14,172 [1] INFO Microsoft.Hosting.Lifetime - Hosting environment: Development
+2020-09-14 14:16:14,175 [1] INFO Microsoft.Hosting.Lifetime - Content root path: D:\Projects\Truong\Store\Store.API
+2020-09-14 14:28:12,026 [1] INFO Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+2020-09-14 14:28:12,187 [1] INFO Microsoft.Hosting.Lifetime - Hosting environment: Development
+2020-09-14 14:28:12,209 [1] INFO Microsoft.Hosting.Lifetime - Content root path: D:\Projects\Truong\Store\Store.API
+2020-09-14 14:31:23,836 [1] INFO Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+2020-09-14 14:31:23,887 [1] INFO Microsoft.Hosting.Lifetime - Hosting environment: Development
+2020-09-14 14:31:23,893 [1] INFO Microsoft.Hosting.Lifetime - Content root path: D:\Projects\Truong\Store\Store.API
+2020-09-14 14:31:25,796 [4] WARN Microsoft.EntityFrameworkCore.Model - Navigations 'Account.CreatedAccount' and 'Account.UpdatedAccount' were separated into two relationships as ForeignKeyAttribute was specified on navigations on both sides.

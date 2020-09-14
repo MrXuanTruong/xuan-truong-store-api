@@ -1,0 +1,10 @@
+.vs/
+Store.API/Store.API.csproj.user
+Store.API/bin/
+Store.API/obj/
+Store.Entity/bin/
+Store.Entity/obj/
+Store.Services/bin/
+Store.Services/obj/
+Store.API/wwwroot/css/swagger-css.css
+Store.API/wwwroot/css/swagger-css.min.css
