@@ -15,6 +15,7 @@ using Microsoft.IdentityModel.Tokens;
 using Newtonsoft.Json;
 using Store.API.Infrastructure;
 using Store.API.Models.Account;
+using Store.Entity.Domains;
 using Store.Services;
 
 namespace Store.API.Controllers
@@ -98,6 +99,13 @@ namespace Store.API.Controllers
             var account = CurrentUser;
             var response = _mapper.Map<CurrentAccountResponseModel>(account);
             return response;
+        }
+
+        [HttpGet("")]
+        public List<Account> GetAllAccount()
+        {
+            var accounts = _accountService.GetAll().ToList();
+            return accounts;
         }
     }
 }

@@ -7,6 +7,6 @@ namespace Store.Services.Interfaces
 {
     public interface IDeleteEntity
     {
-        Task<bool> Detete(object entity);
+        Task<bool> Detete(long entity);
     }
 }

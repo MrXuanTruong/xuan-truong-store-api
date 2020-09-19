@@ -33,12 +33,12 @@ namespace Store.Services
             return context.Accounts.AsNoTracking();
         }
 
-        public async Task<bool> Detete(object entity)
+        public async Task<bool> Detete(long id)
         {
             var result = true;
             try
             {
-                var account = await GetById(entity);
+                var account = await GetById(id);
                 context.Accounts.Remove(account);
             }
             catch (Exception ex)
@@ -50,9 +50,12 @@ namespace Store.Services
             return result;
         }
 
-        public Task<Account> GetById(object id)
+        public Task<Account> GetById(long id)
         {
-            throw new NotImplementedException();
+            return context.Accounts
+                .Where(x => x.AccountId == id)
+                .Include(x => x.CreatedAccount)
+                .SingleOrDefaultAsync();
         }
 
         public async Task<bool> Insert(Account entity)

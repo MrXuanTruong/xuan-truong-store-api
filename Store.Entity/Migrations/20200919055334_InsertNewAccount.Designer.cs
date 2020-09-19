@@ -3,15 +3,17 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using Store.Entity;
 
 namespace Store.Entity.Migrations
 {
     [DbContext(typeof(DatabaseContext))]
-    partial class DatabaseContextModelSnapshot : ModelSnapshot
+    [Migration("20200919055334_InsertNewAccount")]
+    partial class InsertNewAccount
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -25,10 +27,6 @@ namespace Store.Entity.Migrations
                         .ValueGeneratedOnAdd()
                         .HasColumnType("bigint")
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
-
-                    b.Property<string>("Address")
-                        .HasColumnType("nvarchar(200)")
-                        .HasMaxLength(200);
 
                     b.Property<long?>("CreatedBy")
                         .HasColumnType("bigint");
@@ -82,72 +80,30 @@ namespace Store.Entity.Migrations
                         new
                         {
                             AccountId = 1L,
-                            CreatedDate = new DateTime(2020, 9, 19, 6, 19, 13, 892, DateTimeKind.Utc).AddTicks(9041),
+                            CreatedDate = new DateTime(2020, 9, 19, 5, 53, 33, 307, DateTimeKind.Utc).AddTicks(170),
                             DateOfBirth = new DateTime(1991, 2, 6, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Email = "locxtit@gmail.com",
                             FullName = "Admin",
                             Password = "e10adc3949ba59abbe56e057f20f883e",
                             Phone = "0986210955",
-                            UpdatedDate = new DateTime(2020, 9, 19, 6, 19, 13, 893, DateTimeKind.Utc).AddTicks(803),
+                            UpdatedDate = new DateTime(2020, 9, 19, 5, 53, 33, 307, DateTimeKind.Utc).AddTicks(2843),
                             Username = "admin"
                         },
                         new
                         {
                             AccountId = 2L,
-                            CreatedDate = new DateTime(2020, 9, 19, 6, 19, 13, 893, DateTimeKind.Utc).AddTicks(2695),
+                            CreatedDate = new DateTime(2020, 9, 19, 5, 53, 33, 307, DateTimeKind.Utc).AddTicks(5449),
                             DateOfBirth = new DateTime(1991, 2, 6, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Email = "locxtit1@gmail.com",
                             FullName = "locxtit",
                             Password = "e10adc3949ba59abbe56e057f20f883e",
                             Phone = "0986210955",
-                            UpdatedDate = new DateTime(2020, 9, 19, 6, 19, 13, 893, DateTimeKind.Utc).AddTicks(2724),
+                            UpdatedDate = new DateTime(2020, 9, 19, 5, 53, 33, 307, DateTimeKind.Utc).AddTicks(5545),
                             Username = "locxtit"
                         });
                 });
 
-            modelBuilder.Entity("Store.Entity.Domains.Order", b =>
-                {
-                    b.Property<long>("OrderId")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("bigint")
-                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
-
-                    b.Property<long?>("CreatedBy")
-                        .HasColumnType("bigint");
-
-                    b.Property<DateTime?>("CreatedDate")
-                        .HasColumnType("datetime2");
-
-                    b.Property<double>("TotalAmount")
-                        .HasColumnType("float");
-
-                    b.Property<long?>("UpdatedBy")
-                        .HasColumnType("bigint");
-
-                    b.Property<DateTime?>("UpdatedDate")
-                        .HasColumnType("datetime2");
-
-                    b.HasKey("OrderId");
-
-                    b.HasIndex("CreatedBy");
-
-                    b.HasIndex("UpdatedBy");
-
-                    b.ToTable("Orders");
-                });
-
             modelBuilder.Entity("Store.Entity.Domains.Account", b =>
-                {
-                    b.HasOne("Store.Entity.Domains.Account", "CreatedAccount")
-                        .WithMany()
-                        .HasForeignKey("CreatedBy");
-
-                    b.HasOne("Store.Entity.Domains.Account", "UpdatedAccount")
-                        .WithMany()
-                        .HasForeignKey("UpdatedBy");
-                });
-
-            modelBuilder.Entity("Store.Entity.Domains.Order", b =>
                 {
                     b.HasOne("Store.Entity.Domains.Account", "CreatedAccount")
                         .WithMany()

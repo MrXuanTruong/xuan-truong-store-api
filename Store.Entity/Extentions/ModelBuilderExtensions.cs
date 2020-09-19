@@ -25,6 +25,20 @@ namespace Store.Entity.Extentions
                         Phone = "0986210955",
                         UpdatedDate = DateTime.UtcNow,
                         Password = "e10adc3949ba59abbe56e057f20f883e",
+                    },
+                    new Account
+                    {
+                        AccountId = 2,
+                        Username = "locxtit",
+                        FullName = "locxtit",
+                        Email = "locxtit1@gmail.com",
+                        CreatedBy = null,
+                        UpdatedBy = null,
+                        DateOfBirth = new DateTime(1991, 2, 6),
+                        CreatedDate = DateTime.UtcNow,
+                        Phone = "0986210955",
+                        UpdatedDate = DateTime.UtcNow,
+                        Password = "e10adc3949ba59abbe56e057f20f883e",
                     }
                 );
         }

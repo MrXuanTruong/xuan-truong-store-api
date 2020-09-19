@@ -31,5 +31,8 @@ namespace Store.Entity.Domains
 
         [StringLength(100)]
         public string Password { get; set; }
+
+        [StringLength(200)]
+        public string Address { get; set; }
     }
 }

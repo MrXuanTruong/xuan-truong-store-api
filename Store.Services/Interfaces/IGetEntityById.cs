@@ -7,6 +7,6 @@ namespace Store.Services.Interfaces
 {
     public interface IGetEntityById<TEntity> where TEntity : class
     {
-        Task<TEntity> GetById(object id);
+        Task<TEntity> GetById(long id);
     }
 }
