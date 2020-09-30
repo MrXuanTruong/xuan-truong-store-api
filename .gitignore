@@ -8,3 +8,6 @@ Store.Services/bin/
 Store.Services/obj/
 Store.API/wwwroot/css/swagger-css.css
 Store.API/wwwroot/css/swagger-css.min.css
+Store.Web/bin/
+Store.Web/node_modules/
+Store.Web/obj/

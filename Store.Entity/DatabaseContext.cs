@@ -25,6 +25,8 @@ namespace Store.Entity
 
         public DbSet<Account> Accounts { get; set; }
 
+        public DbSet<AccountType> AccountTypes { get; set; }
+
         public DbSet<Order> Orders { get; set; }
     }
 }

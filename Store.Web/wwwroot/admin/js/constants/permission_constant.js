@@ -1,0 +1,3 @@
+﻿const PERMISSIONS = {
+    MANAGE_OPERATOR: 'MANAGE_OPERATOR',
+}

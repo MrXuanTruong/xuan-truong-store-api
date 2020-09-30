@@ -26,6 +26,10 @@ namespace Store.Entity.Migrations
                         .HasColumnType("bigint")
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
+                    b.Property<string>("AccountTypeId")
+                        .HasColumnType("nvarchar(50)")
+                        .HasMaxLength(50);
+
                     b.Property<string>("Address")
                         .HasColumnType("nvarchar(200)")
                         .HasMaxLength(200);
@@ -82,27 +86,58 @@ namespace Store.Entity.Migrations
                         new
                         {
                             AccountId = 1L,
-                            CreatedDate = new DateTime(2020, 9, 19, 6, 19, 13, 892, DateTimeKind.Utc).AddTicks(9041),
+                            CreatedDate = new DateTime(2020, 9, 28, 15, 39, 8, 996, DateTimeKind.Utc).AddTicks(1021),
                             DateOfBirth = new DateTime(1991, 2, 6, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Email = "locxtit@gmail.com",
                             FullName = "Admin",
                             Password = "e10adc3949ba59abbe56e057f20f883e",
                             Phone = "0986210955",
-                            UpdatedDate = new DateTime(2020, 9, 19, 6, 19, 13, 893, DateTimeKind.Utc).AddTicks(803),
+                            UpdatedDate = new DateTime(2020, 9, 28, 15, 39, 8, 996, DateTimeKind.Utc).AddTicks(2179),
                             Username = "admin"
                         },
                         new
                         {
                             AccountId = 2L,
-                            CreatedDate = new DateTime(2020, 9, 19, 6, 19, 13, 893, DateTimeKind.Utc).AddTicks(2695),
+                            CreatedDate = new DateTime(2020, 9, 28, 15, 39, 8, 996, DateTimeKind.Utc).AddTicks(3418),
                             DateOfBirth = new DateTime(1991, 2, 6, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Email = "locxtit1@gmail.com",
                             FullName = "locxtit",
                             Password = "e10adc3949ba59abbe56e057f20f883e",
                             Phone = "0986210955",
-                            UpdatedDate = new DateTime(2020, 9, 19, 6, 19, 13, 893, DateTimeKind.Utc).AddTicks(2724),
+                            UpdatedDate = new DateTime(2020, 9, 28, 15, 39, 8, 996, DateTimeKind.Utc).AddTicks(3439),
                             Username = "locxtit"
                         });
+                });
+
+            modelBuilder.Entity("Store.Entity.Domains.AccountType", b =>
+                {
+                    b.Property<string>("AccountTypeId")
+                        .HasColumnType("nvarchar(50)")
+                        .HasMaxLength(50);
+
+                    b.Property<string>("AccountTypeName")
+                        .HasColumnType("nvarchar(100)")
+                        .HasMaxLength(100);
+
+                    b.Property<long?>("CreatedBy")
+                        .HasColumnType("bigint");
+
+                    b.Property<DateTime?>("CreatedDate")
+                        .HasColumnType("datetime2");
+
+                    b.Property<long?>("UpdatedBy")
+                        .HasColumnType("bigint");
+
+                    b.Property<DateTime?>("UpdatedDate")
+                        .HasColumnType("datetime2");
+
+                    b.HasKey("AccountTypeId");
+
+                    b.HasIndex("CreatedBy");
+
+                    b.HasIndex("UpdatedBy");
+
+                    b.ToTable("AccountTypes");
                 });
 
             modelBuilder.Entity("Store.Entity.Domains.Order", b =>
@@ -137,6 +172,17 @@ namespace Store.Entity.Migrations
                 });
 
             modelBuilder.Entity("Store.Entity.Domains.Account", b =>
+                {
+                    b.HasOne("Store.Entity.Domains.Account", "CreatedAccount")
+                        .WithMany()
+                        .HasForeignKey("CreatedBy");
+
+                    b.HasOne("Store.Entity.Domains.Account", "UpdatedAccount")
+                        .WithMany()
+                        .HasForeignKey("UpdatedBy");
+                });
+
+            modelBuilder.Entity("Store.Entity.Domains.AccountType", b =>
                 {
                     b.HasOne("Store.Entity.Domains.Account", "CreatedAccount")
                         .WithMany()

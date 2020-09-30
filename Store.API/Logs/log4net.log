@@ -36,3 +36,22 @@ System.InvalidOperationException: Unable to resolve service for type 'Swashbuckl
 2020-09-14 14:31:23,887 [1] INFO Microsoft.Hosting.Lifetime - Hosting environment: Development
 2020-09-14 14:31:23,893 [1] INFO Microsoft.Hosting.Lifetime - Content root path: D:\Projects\Truong\Store\Store.API
 2020-09-14 14:31:25,796 [4] WARN Microsoft.EntityFrameworkCore.Model - Navigations 'Account.CreatedAccount' and 'Account.UpdatedAccount' were separated into two relationships as ForeignKeyAttribute was specified on navigations on both sides.
+2020-09-19 13:58:36,011 [1] INFO Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+2020-09-19 13:58:36,026 [1] INFO Microsoft.Hosting.Lifetime - Hosting environment: Development
+2020-09-19 13:58:36,028 [1] INFO Microsoft.Hosting.Lifetime - Content root path: D:\Projects\Truong\Store\Store.API
+2020-09-19 14:00:07,103 [7] WARN Microsoft.EntityFrameworkCore.Model - Navigations 'Account.CreatedAccount' and 'Account.UpdatedAccount' were separated into two relationships as ForeignKeyAttribute was specified on navigations on both sides.
+2020-09-19 14:04:27,256 [1] INFO Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+2020-09-19 14:04:27,268 [1] INFO Microsoft.Hosting.Lifetime - Hosting environment: Development
+2020-09-19 14:04:27,270 [1] INFO Microsoft.Hosting.Lifetime - Content root path: D:\Projects\Truong\Store\Store.API
+2020-09-19 14:04:30,320 [9] WARN Microsoft.EntityFrameworkCore.Model - Navigations 'Account.CreatedAccount' and 'Account.UpdatedAccount' were separated into two relationships as ForeignKeyAttribute was specified on navigations on both sides.
+2020-09-28 21:26:24,798 [1] INFO Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+2020-09-28 21:26:24,813 [1] INFO Microsoft.Hosting.Lifetime - Hosting environment: Development
+2020-09-28 21:26:24,816 [1] INFO Microsoft.Hosting.Lifetime - Content root path: D:\Projects\Truong\Store\Store.API
+2020-09-28 21:27:06,477 [7] WARN Microsoft.EntityFrameworkCore.Model - Navigations 'Account.CreatedAccount' and 'Account.UpdatedAccount' were separated into two relationships as ForeignKeyAttribute was specified on navigations on both sides.
+2020-09-28 21:34:38,895 [1] INFO Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+2020-09-28 21:34:38,908 [1] INFO Microsoft.Hosting.Lifetime - Hosting environment: Development
+2020-09-28 21:34:38,913 [1] INFO Microsoft.Hosting.Lifetime - Content root path: D:\Projects\Truong\Store\Store.API
+2020-09-28 21:34:48,243 [4] WARN Microsoft.EntityFrameworkCore.Model - Navigations 'Account.CreatedAccount' and 'Account.UpdatedAccount' were separated into two relationships as ForeignKeyAttribute was specified on navigations on both sides.
+2020-09-28 22:29:50,889 [1] INFO Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+2020-09-28 22:29:50,903 [1] INFO Microsoft.Hosting.Lifetime - Hosting environment: Development
+2020-09-28 22:29:50,906 [1] INFO Microsoft.Hosting.Lifetime - Content root path: D:\Projects\Truong\Store\Store.API

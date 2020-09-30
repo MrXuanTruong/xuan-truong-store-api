@@ -34,5 +34,12 @@ namespace Store.Entity.Domains
 
         [StringLength(200)]
         public string Address { get; set; }
+
+        [StringLength(50)]
+        public string AccountTypeId { get; set; }
+
+        [NotMapped]
+        [ForeignKey("AccountTypeId")]
+        public AccountType AccountType { get; set; }
     }
 }

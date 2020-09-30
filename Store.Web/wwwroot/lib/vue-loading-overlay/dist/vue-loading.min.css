@@ -1,0 +1,8 @@
+/**
+ * Minified by jsDelivr using clean-css v4.2.1.
+ * Original file: /npm/vue-loading-overlay@3.2.0/dist/vue-loading.css
+ * 
+ * Do NOT use SRI with dynamically generated files! More information: https://www.jsdelivr.com/using-sri-with-dynamic-files
+ */
+.vld-overlay{bottom:0;left:0;position:absolute;right:0;top:0;align-items:center;display:none;justify-content:center;overflow:hidden;z-index:1}.vld-overlay.is-active{display:flex}.vld-overlay.is-full-page{z-index:999;position:fixed}.vld-overlay .vld-background{bottom:0;left:0;position:absolute;right:0;top:0;background:#fff;opacity:.5}.vld-overlay .vld-icon,.vld-parent{position:relative}
+/*# sourceMappingURL=/sm/fd0ac7eac9c25c1453478ed298ead0899956184d53eced897e9462e6cb54b872.map */

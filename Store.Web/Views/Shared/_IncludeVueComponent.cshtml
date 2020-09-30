@@ -1,0 +1,30 @@
+﻿@using Microsoft.Extensions.Configuration
+@using Microsoft.AspNetCore.Hosting
+@inject IConfiguration Configuration
+@{
+    string vueDataJson = "{}";
+    if (ViewBag.VueDataJson != null)
+    {
+        vueDataJson = ViewBag.VueDataJson as string;
+    }
+
+    <script>
+        var vueDataJson = @Html.Raw(vueDataJson);
+    </script>
+
+    var controller = this.ViewContext.RouteData.Values["controller"] as string;
+    var action = this.ViewContext.RouteData.Values["action"] as string;
+    var area = this.ViewContext.RouteData.Values["area"] as string;
+
+    var jsFile = $"{controller}.{action}.component.js";
+
+    if (string.IsNullOrEmpty(area))
+    {
+        var fullUrl = $"/js/controllers/{controller}/{jsFile}";
+        <script src="@fullUrl" asp-append-version="true"></script>
+    }
+    else
+    {
+        <script src="~/admin/js/controllers/@controller/@jsFile" asp-append-version="true"></script>
+    }
+}

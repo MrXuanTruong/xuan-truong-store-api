@@ -15,6 +15,8 @@ namespace Store.Services
     {
         Task<Account> Authenticate(string username, string password);
 
+        Task<Account> GetByUsername(string username);
+
         IQueryable<Account> GetAll();
     }
 }

@@ -1,0 +1,15 @@
+﻿@import url('https://fonts.googleapis.com/css?family=Quicksand&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+
+
+.mce-flow-layout-item.mce-last {
+    display: none;
+}
+
+.tox .tox-toolbar {
+    background-color: #f5f5f5 !important;
+}
+
+.mce-tinymce.mce-panel, .mce-tinymce .mce-panel {
+    border-width: 0 !important;
+}

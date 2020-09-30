@@ -75,13 +75,13 @@ namespace Store.Services
             return result;
         }
 
-        public bool Update(Account entity)
+        public async Task<bool> Update(Account entity)
         {
             var result = true;
             try
             {
                 context.Accounts.Update(entity);
-                context.SaveChangesAsync();
+                await context.SaveChangesAsync();
             }
             catch (Exception ex)
             {
@@ -90,6 +90,11 @@ namespace Store.Services
             }
 
             return result;
+        }
+
+        public Task<Account> GetByUsername(string username)
+        {
+            return context.Accounts.Where(x => x.Username == username).FirstOrDefaultAsync();
         }
     }
 }

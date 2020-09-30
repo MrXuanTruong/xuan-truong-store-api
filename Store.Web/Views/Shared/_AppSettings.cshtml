@@ -1,0 +1,13 @@
+﻿@using Microsoft.Extensions.Configuration
+@inject IConfiguration Configuration
+
+@{
+    var apiUrl = Configuration.GetValue<string>("AppSettings:APIUrl");
+    var area = this.ViewContext.RouteData.Values["area"] as string;
+
+
+    <script>
+        var apiUrl = '@apiUrl';
+        var area = '@area';
+    </script>
+}

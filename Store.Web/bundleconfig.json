@@ -1,0 +1,140 @@
+[
+  {
+    "outputFileName": "wwwroot/css/custom.min.css",
+    "inputFiles": [
+      "wwwroot/css/custom.css"
+    ]
+  },
+  {
+    "outputFileName": "wwwroot/css/main.min.css",
+    "inputFiles": [
+      "wwwroot/css/main.css"
+    ]
+  },
+  {
+    "outputFileName": "wwwroot/css/responsive.min.css",
+    "inputFiles": [
+      "wwwroot/css/responsive.css"
+    ]
+  },
+  {
+    "outputFileName": "wwwroot/lib/flexslider/flexslider.min.css",
+    "inputFiles": [
+      "wwwroot/lib/flexslider/flexslider.css"
+    ]
+  },
+  {
+    "outputFileName": "wwwroot/lib/flexslider/jquery.flexslider.min.js",
+    "inputFiles": [
+      "wwwroot/lib/flexslider/jquery.flexslider.js"
+    ]
+  },
+  {
+    "outputFileName": "wwwroot/js/config.min.js",
+    "inputFiles": [
+      "wwwroot/js/config.js"
+    ]
+  },
+  {
+    "outputFileName": "wwwroot/js/site.min.js",
+    "inputFiles": [
+      "wwwroot/js/site.js"
+    ]
+  },
+  {
+    "outputFileName": "wwwroot/js/shared/vue.prototype.min.js",
+    "inputFiles": [
+      "wwwroot/js/shared/vue.prototype.js"
+    ]
+  },
+  {
+    "outputFileName": "wwwroot/js/shared/filters/currency.filter.vue.min.js",
+    "inputFiles": [
+      "wwwroot/js/shared/filters/currency.filter.vue.js"
+    ]
+  },
+  {
+    "outputFileName": "wwwroot/js/shared/filters/dateformat.filter.vue.min.js",
+    "inputFiles": [
+      "wwwroot/js/shared/filters/dateformat.filter.vue.js"
+    ]
+  },
+  {
+    "outputFileName": "wwwroot/js/shared/filters/friendly_url.filter.vue.min.js",
+    "inputFiles": [
+      "wwwroot/js/shared/filters/friendly_url.filter.vue.js"
+    ]
+  },
+  {
+    "outputFileName": "wwwroot/js/shared/filters/level.filter.vue.min.js",
+    "inputFiles": [
+      "wwwroot/js/shared/filters/level.filter.vue.js"
+    ]
+  },
+  {
+    "outputFileName": "wwwroot/admin/js/prototypes/check-login.prototype.min.js",
+    "inputFiles": [
+      "wwwroot/admin/js/prototypes/check-login.prototype.js"
+    ]
+  },
+  {
+    "outputFileName": "wwwroot/admin/js/prototypes/delete-message.prototype.min.js",
+    "inputFiles": [
+      "wwwroot/admin/js/prototypes/delete-message.prototype.js"
+    ]
+  },
+  {
+    "outputFileName": "wwwroot/js/shared/mixins/mixin.min.js",
+    "inputFiles": [
+      "wwwroot/js/shared/mixins/mixin.js"
+    ]
+  },
+  {
+    "outputFileName": "wwwroot/admin/js/shared/mixins/mixin.min.js",
+    "inputFiles": [
+      "wwwroot/admin/js/shared/mixins/mixin.js"
+    ]
+  },
+  {
+    "outputFileName": "wwwroot/js/shared/filters/currency.exhange.filter.vue.min.js",
+    "inputFiles": [
+      "wwwroot/js/shared/filters/currency.exhange.filter.vue.js"
+    ]
+  },
+  {
+    "outputFileName": "wwwroot/js/services/populate.service.min.js",
+    "inputFiles": [
+      "wwwroot/js/services/populate.service.js"
+    ]
+  },
+  {
+    "outputFileName": "wwwroot/admin/css/custom.min.css",
+    "inputFiles": [
+      "wwwroot/admin/css/custom.css"
+    ]
+  },
+  {
+    "outputFileName": "wwwroot/admin/css/responsive.min.css",
+    "inputFiles": [
+      "wwwroot/admin/css/responsive.css"
+    ]
+  },
+  {
+    "outputFileName": "wwwroot/admin/css/editor.min.css",
+    "inputFiles": [
+      "wwwroot/admin/css/editor.css"
+    ]
+  },
+  {
+    "outputFileName": "wwwroot/admin/css/editor-content.min.css",
+    "inputFiles": [
+      "wwwroot/admin/css/editor-content.css"
+    ]
+  },
+  {
+    "outputFileName": "wwwroot/admin/css/style.min.css",
+    "inputFiles": [
+      "wwwroot/admin/css/style.css"
+    ]
+  }
+]

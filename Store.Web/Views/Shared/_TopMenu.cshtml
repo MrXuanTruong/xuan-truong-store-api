@@ -1,0 +1,35 @@
+﻿<nav class="navbar navbar-default">
+    <div class="container">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#main-navbar" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="main-navbar">
+            <div class="account-info hidden visible-xs">
+                <img class="avatar" src="/images/avatar.png" alt="">
+                <span class="name">Hello Vubin!</span>
+                <div class="clearfix control">
+                    <a href="#">profile</a>
+                    <a href="#">My bookings</a>
+                </div>
+            </div>
+            <ul class="nav navbar-nav">
+                <li><a href="/">Home</a></li>
+                <li><a href="#">About us</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="@Url.Action("Index","News")">News</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">How to book</a></li>
+                <li><a href="#">Contact us</a></li>
+            </ul>
+        </div><!-- /.navbar-collapse -->
+        <div class="hotline hidden-xs"><a href="tel:1900636424">1900 1213</a></div>
+    </div><!-- /.container-fluid -->
+</nav>

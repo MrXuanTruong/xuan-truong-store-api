@@ -1,0 +1,101 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <partial name="_Head" />
+    <script src="~/lib/moment.js/moment.min.js"></script>
+</head>
+<body>
+    <partial name="_AppSettings" />
+    <partial name="_Header" />
+    @{
+        var controller = this.ViewContext.RouteData.Values["controller"];
+        var action = this.ViewContext.RouteData.Values["action"];
+        controller = controller.ToString().ToLower();
+        action = action.ToString().ToLower();
+    }
+
+    <main id="page-content" class="page-@controller-@action">
+        @RenderBody()
+    </main>
+
+    <partial name="_Footer" />
+
+    <environment include="Development">
+        <script src="~/lib/jquery-ui-1.12.1.custom/external/jquery/jquery.js"></script>
+        <script src="~/lib/bootstrap-4.5/dist/js/bootstrap.js"></script>
+
+        <script src="~/js/config.js" asp-append-version="true"></script>
+        <script src="~/js/site.js" asp-append-version="true"></script>
+        <script src="~/lib/vue/vue.js"></script>
+        <script src="~/lib/axios/axios.js"></script>
+
+        <script src="~/js/shared/filters/currency.filter.vue.js" asp-append-version="true"></script>
+        <script src="~/js/shared/filters/dateformat.filter.vue.js" asp-append-version="true"></script>
+
+        <!-- https://github.com/simplesmiler/vue-clickaway -->
+        <script src="~/lib/vue-clickaway/vue-clickaway.js"></script>
+
+        <!-- https://cdnjs.com/libraries/vue-lazyload -->
+        <script src="~/lib/vue-lazyload/vue-lazyload.js"></script>
+        <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+        <script src="~/lib/vue-loading-overlay/dist/vue-loading.min.js" asp-append-version="true"></script>
+        <script src="~/js/shared/vue.prototype.js" asp-append-version="true"></script>
+        <script src="~/js/shared/mixins/mixin.js" asp-append-version="true"></script>
+
+    </environment>
+
+    <environment exclude="Development">
+        <script src="~/lib/jquery-ui-1.12.1.custom/external/jquery/jquery.js"></script>
+        <script src="~/lib/bootstrap-4.5/dist/js/bootstrap.js"></script>
+        <script src="~/lib/jquery-ui-1.12.1.custom/jquery-ui.min.js"></script>
+        <script src="~/lib/flexslider/jquery.flexslider.min.js"></script>
+
+        <script src="~/js/config.min.js" asp-append-version="true"></script>
+        <script src="~/js/site.min.js" asp-append-version="true"></script>
+        <script src="~/lib/vue/vue.min.js" asp-append-version="true"></script>
+        <script src="~/lib/axios/axios.min.js" asp-append-version="true"></script>
+
+        <script src="~/js/shared/localization.min.js" asp-append-version="true"></script>
+        <script src="~/js/shared/filters/currency.filter.vue.js" asp-append-version="true"></script>
+        <script src="~/js/shared/filters/dateformat.filter.vue.min.js" asp-append-version="true"></script>
+
+        <script src="https://unpkg.com/vue-i18n@8.11.2/dist/vue-i18n"></script>
+        <script src="~/lib/vue-clickaway/vue-clickaway.min.js" asp-append-version="true"></script>
+        <script src="~/lib/vue-lazyload/vue-lazyload.js" asp-append-version="true"></script>
+
+        <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+        <script src="~/lib/vue-loading-overlay/dist/vue-loading.min.js" asp-append-version="true"></script>
+        <script src="~/js/shared/vue.prototype.min.js" asp-append-version="true"></script>
+        <script src="~/js/shared/mixins/mixin.min.js" asp-append-version="true"></script>
+
+    </environment>
+
+
+    <script src="~/lib/bootstrap-datetimepicker/js/bootstrap-datetimepicker.min.js" asp-append-version="true"></script>
+    <link href="~/lib/bootstrap-datetimepicker/css/bootstrap-datetimepicker.min.css" asp-append-version="true" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/vue-bootstrap-datetimepicker@5" asp-append-version="true"></script>
+    <script src="~/js/shared/datetimepicker.config.js" asp-append-version="true"></script>
+
+    <link href="~/lib/flatpickr/flatpickr.min.css" asp-append-version="true" rel="stylesheet">
+    <script src="~/lib/flatpickr/flatpickr.min.js" asp-append-version="true"></script>
+    <script src="~/lib/vue-flatpickr-component/dist/vue-flatpickr.min.js" asp-append-version="true"></script>
+
+    <script src="~/lib/vue-select/vue-select.js"></script>
+
+    <script src="~/js/shared/directives/click-outsite.js" asp-append-version="true"></script>
+
+    <script src="~/js/shared/loadings/hollow.dots.spinner.component.js" asp-append-version="true"></script>
+    <link href="~/js/shared/loadings/hollow.dots.spinner.css" asp-append-version="true" rel="stylesheet">
+
+    <script src="~/lib/vue-content-loader/dist/vue-content-loader.js" asp-append-version="true"></script>
+    <script src="~/js/shared/filters/currency.exhange.filter.vue.js" asp-append-version="true"></script>
+
+    <script src="~/js/shared/modal.component.js" asp-append-version="true"></script>
+    <script src="~/js/controllers/layout/header.component.js" asp-append-version="true"></script>
+
+    @RenderSection("Scripts", required: false)
+
+    <partial name="_IncludeVueComponent" />
+    <partial name="_ModalTemplate" />
+</body>
+</html>
